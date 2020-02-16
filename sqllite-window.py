@@ -33,9 +33,9 @@ class Product:
         self.tree.grid(row = 4, column = 0, columnspan = 2)
         self.tree.heading('#0', text = 'Name', anchor = CENTER)
         self.tree.heading('#1', text = 'Price', anchor = CENTER)
-    # Run 
         self.get_products()
-
+        
+    # Run 
     def run_query(self, query, parameters = ()):
         with sqlite3.connect(self.db_name) as conn:
             cursor = conn.cursor()
