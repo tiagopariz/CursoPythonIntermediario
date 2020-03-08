@@ -72,7 +72,7 @@ class Product:
             self.name.delete(0, END)
             self.price.delete(0, END)
         else:
-            self.message['Text'] = 'Name and price is required'
+            self.message['text'] = 'Name and price is required'
         self.get_products()
 
 if __name__ == '__main__':
